@@ -1,0 +1,327 @@
+
+$color-primary: #9356DC;
+$color-secondary: #FF79DA;
+$color-tertiary: #99E2D0;
+$padding: 1rem;
+
+body{
+    margin: 0;
+    font-family: Roboto sans-serif;
+}
+
+header{
+    box-shadow: 0 0 0.5rem rgb(0,0, 0 / 25%);
+    width: 100%;
+    min-width: 320px;
+    padding: 21px 0;
+}
+
+.logo{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        position: relative;
+
+        img{
+            max-width: 168px;
+        }
+    }
+
+
+.fa-arrow-left:before {
+    position: absolute;
+    left: 2rem;
+    height: 2rem;
+    width: 2rem;
+    top: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transform: translateY(-50%);
+    font-size: 1.2rem;
+    color: #000;
+}
+/*
+header {
+    padding:$padding;
+    box-shadow: 10px 5px 5px #f2f2f2;
+    position:relative ;
+    z-index: 1000;
+    &__logo{
+        font-family: "shrikhand";
+        margin: 0;
+        text-align: center;
+    }
+}*/
+
+footer {
+    background-color: #353535;
+    color: #FFF;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    padding: 25px 0px;
+    max-width: 100%;
+    min-width: 320px;
+    align-items: center;
+
+    h3 {
+        margin: 0 0 10px 20px;
+        color: #e6e6e6;
+        font-weight: normal;
+    }
+
+    a {
+        text-decoration: none;
+    }
+
+    a:hover {
+        text-decoration: underline;
+        color: #FFF;
+    }
+
+    .footer__logo {
+        font-family: 'Shrikhand', cursive;
+        font-weight: normal;
+        font-size: 20px;
+        margin-bottom: 15px;
+    }
+}
+/*
+footer {
+        background-color: black;
+        color: #fff;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        padding: 25px 0px;
+        max-width: 100%;
+        min-width: 320px;
+
+        &__titre{
+            margin: 0;
+            align-items: center;
+        }
+        
+        &__list{
+            display: flex;
+            justify-content: center;
+        }
+    }*/
+
+
+h1 {
+    margin: 0.5rem;
+    display: flex;
+    font-size: 2rem;
+    font-weight: bold;
+    
+}
+
+.localisation {
+    display: flex;
+    justify-content: center;
+    padding: 1.25rem $padding;
+    background-color: rgb(243, 243, 243);
+    font-size: 1.2rem;
+    position: relative;
+
+    &__icon {
+        margin-right: 1rem;
+    }
+
+    &__maps {
+        font-weight: 700;
+    }
+  }
+
+.exploration {
+    padding: 2rem;
+    text-align: center;
+    background-color: white;
+
+    &__titre {
+        margin: 0;
+    }
+
+    &__soustitre {
+        font-weight: 300;
+        margin: 1.5rem 0;
+    }
+
+    &__btn {
+        border: 0;
+        padding: 0.75rem 1.5rem;
+        font-weight: 500;
+        font-size: 1.1rem;
+        border-radius: 100px;
+        color: #fff;
+        background-color: #686868;
+        background-image: linear-gradient(#9356DC, #FF79DA);
+        cursor: pointer;
+        transition-duration: 4s;
+        box-shadow: 0.25rem 0.25rem 10px #686868;
+ }
+
+}
+
+.fonctionnement{ 
+    padding:  ( $padding + 1rem ) $padding;
+
+        &__titre {
+            margin-top: 0;
+        }
+
+        &__etapes {
+            display: flex;
+            width: 120%;
+            margin: 0;
+            padding: 0;
+            list-style: none;
+            counter-reset: compteListe;
+        
+        }
+
+        &__etape {
+            padding: $padding;
+            margin: 1rem 0 1rem 0.75rem;
+            box-shadow: 0.25rem 0.25rem 0.5rem rgb(128, 139, 150);
+            border-radius: 1.25rem;
+            background-color: #f6f6f6;
+            display: flex;
+            position: relative;
+
+          
+
+            &:first-child{
+                margin-top: 0;
+            }
+
+        &:last-child {
+            margin-bottom: 0;
+        }
+
+        &::before {
+            counter-increment: compteListe 1;
+            content: counter(compteListe) " ";
+            background: $color-primary;
+            height: 1.5rem;
+            width: 1.5rem;
+            border-radius: 100px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            color: white;
+            position: absolute;
+            left: -0.75rem;
+        }
+
+        &__icon {
+            margin-right: 1rem;
+            color: #7e7e7e;
+        }
+    }
+}
+
+.restaurant {
+    background-color: #f6f6f6;
+    padding: 2rem 1rem;
+
+    &__head {
+    max-width: 1280px;
+    margin: auto;
+    position: relative;
+
+    }
+   
+   
+    &__titre {
+    display: flex;
+    font-size: 1.5rem;
+    margin: 0.5rem;
+    font-weight: bold;
+
+    }
+    
+}
+
+
+.cartes {
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    column-gap: 2rem;
+    row-gap: 2rem;
+    @media (min-width:64rem) {
+    grid-template-columns: repeat(2, 1fr); 
+    }      
+}
+
+.carte {
+    background-color: white;
+    border-radius: 1rem;
+    position: relative;
+    text-decoration: none;
+    color: inherit;
+    display: block;
+  
+    &__img {
+        height: 12rem;
+        width: 100%;
+        border: 0 solid transparent;
+        border-radius: 1rem 1rem 0 0;
+        box-shadow: none;
+        object-fit: cover;
+      
+    }
+  
+    &__new {
+    
+      background-color: $color-tertiary;
+      color: darken($color-tertiary, 50%);
+      padding: 0.5rem;
+      border-radius: 0.125rem;
+      position: absolute;
+      top: 1rem;
+      right: 0.75rem;
+    }
+
+    &__footer {
+        padding: $padding;
+        position: relative;
+        display: flex;
+        align-items: center;
+    }
+
+    &__content {
+        float: 1;
+    }
+
+    &__titre {
+        margin: 0;
+        margin-bottom: 0.25rem;
+    }
+
+    &__localisation {
+        margin: 0;
+    }
+  
+    &__btn {
+      height: 2rem;
+      width: 2rem;
+      background-color: transparent;
+      border: transparent 0px solid;
+      padding: 0;
+      display:flex;
+      align-items:center;
+      justify-content:center;
+      margin: 1rem;
+      font-size: 1rem;
+    }
+
+    &__like {
+        background-color: white;
+    }
+  
+  }
+
+

@@ -1,0 +1,14 @@
+{
+  "name": "projet_3_ohmyfood",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "sass": "sass ./sass/main.scss:./css/style.css -w  --style nested",
+    "prefix": "postcss ./public/css/style.css --use autoprefixer -d ./css/prefixed/"
+  },
+  "author": "",
+  "license": "ISC",
+  "browserslist": "last 4 versions"
+
+}
