@@ -74,22 +74,20 @@ footer {
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
-  padding: 25px 0px;
+  padding: 15px 0px;
   max-width: 100%;
   min-width: 320px;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
 }
 
 footer h3 {
-  margin: 0 0 10px 20px;
+  margin-left: 40px;
   color: #e6e6e6;
   font-weight: normal;
 }
 
 footer a {
   text-decoration: none;
+  color: #FFF;
 }
 
 footer a:hover {
@@ -97,11 +95,21 @@ footer a:hover {
   color: #FFF;
 }
 
+footer ul, footer li {
+  list-style-type: none;
+  margin-bottom: 5px;
+}
+
+footer .fas {
+  margin-right: 0.7rem;
+  width: 20px;
+}
+
 footer .footer__logo {
   font-family: 'Shrikhand', cursive;
   font-weight: normal;
   font-size: 20px;
-  margin-bottom: 15px;
+  margin-bottom: 5px;
 }
 
 /*
