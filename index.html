@@ -14,9 +14,9 @@
 </head>
 <body>
     <!--loading spinner a mettre dans une balise span-->
-    <div class="loader_food"></div>
-    <div class="loader-knife-fork"></div>
-    
+    <div class="loader__food">
+         <div class="loader__cercle"></div>
+    </div>
 <!--header
 <header class="header">
         <h1 class="header__logo">ohmyfood</h1>
@@ -24,9 +24,9 @@
 <header>
     <div class="logo">
         <img src="images/logo/ohmyfood.png" alt="logoOhmyfood">
-        <a href="./index.html">
+        <!--<a href="./index.html">
             <i class="fas fa-arrow-left"></i>
-        </a>
+        </a>-->
     </div>
 </header>
 <main class="main">
@@ -47,33 +47,22 @@
 </div>
 
 <!--fonctionnement-->
+<h2 class="fonctionnement__titre">Fonctionnement</h2>
 <section class="fonctionnement">
- <div class="container">
-    <h2 class="fonctionnement__titre">Fonctionnement</h2>
-    <ol class="fonctionnement__etapes">
-        <li class="fonctionnement__etape">
-        
-            <i class="fa-mobile-alt fas fonctionnement__icon" aria-hidden="true"></i>
-      
-            <span class="text">Choisissez un restaurant</span>
-        </li>
-       
-        <li class="fonctionnement__etape">
-            
-                <i class="fas fa-list-ul fonctionnement__icon" aria-hidden="true"></i>
-            
-                <span class="text">Composez votre menu</span>
-        </li>
-        
-        <li class="fonctionnement__etape">
-            
-             <i class="fas fa-store fonctionnement__icon" aria-hidden="true"></i>
-                
-            <span class="text">Dégustez au restaurant</span>
-        </li>
-    </ol>
+ <div class="fonctionnement__etape">
+    <i class="fa-mobile-alt fas"></i>Choisissez un restaurant
+   <div class="fonctionnement__etape__number">1</div>
+    </div>
+    <div class="fonctionnement__etape">
+     <i class="fas fa-list-ul"></i>Composez votre menu
+        <div class="fonctionnement__etape__number">2</div>
+     </div>
 
-</div>
+    <div class="fonctionnement__etape"><i class="fas fa-store"></i>Dégustez au restaurant
+        <div class="fonctionnement__etape__number">3</div>
+    </div>
+    
+
 </section>
 
 <!--Restaurants/cartes et icone coeur-->
@@ -91,11 +80,17 @@
                         <h3 class="carte__titre">La palette du goût</h3>
                         <span class="carte__localisation">Ménilmontant</span>
                     </div>
-                    <div class="carte__btn">
-                
-                        <i class="carte__like fa-2x fa-heart fas menu__like menu__like--nobg" aria-hidden="true"></i>
+                    <div class="heart">
+                        <div class="heart__1">
+                            <i class="far fa-heart fa-2x"></i>
+                        </div>
+                        <div class="heart__2">
+                            <i class="fas fa-heart fa-2x"></i>
+                        </div>
                     </div>
-                </div>
+                    
+                    </div>
+                <!--</div>-->
             </a>
             
        
@@ -109,10 +104,15 @@
                         <h3 class="carte__titre">La note enchantée</h3>
                         <span class="carte__localisation">Charonne</span>
                     </div>
-                    <div class="carte__btn">
-                    
-                        <i class="carte__like fa-2x fa-heart fas menu__like menu__like--bg" aria-hidden="true"></i>
+                    <div class="heart">
+                        <div class="heart__1">
+                            <i class="far fa-heart fa-2x"></i>
+                        </div>
+                        <div class="heart__2">
+                            <i class="fas fa-heart fa-2x"></i>
+                        </div>
                     </div>
+                    
                 </div>
             </a>
     
@@ -127,10 +127,15 @@
                         <h3 class="carte__titre">À la française</h3>
                         <span class="carte__localisation">Cité Rouge</span>
                     </div>
-                    <div class="carte__btn">
-                        
-                        <i class="carte__like fa-2x fa-heart fas menu__like menu__like--bg" aria-hidden="true"></i>
+                    <div class="heart">
+                        <div class="heart__1">
+                            <i class="far fa-heart fa-2x"></i>
+                        </div>
+                        <div class="heart__2">
+                            <i class="fas fa-heart fa-2x"></i>
+                        </div>
                     </div>
+                    
                 </div>
             </a>
     
@@ -145,10 +150,15 @@
                         <h3 class="carte__titre">Le délice des sens</h3>
                         <span class="carte__localisation">Folie-Méricourt</span>
                     </div>
-                    <div class="carte__btn">
-                        
-                        <i class="carte__like fa-2x fa-heart fas menu__like menu__like--bg" aria-hidden="true"></i>
+                    <div class="heart">
+                        <div class="heart__1">
+                            <i class="far fa-heart fa-2x"></i>
+                        </div>
+                        <div class="heart__2">
+                            <i class="fas fa-heart fa-2x"></i>
+                        </div>
                     </div>
+                    
                 </div>
             </a>    
 
