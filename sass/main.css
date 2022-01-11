@@ -291,12 +291,12 @@ h1 {
 }
 
 .fonctionnement__titre {
-  margin-top: 0;
+  margin: 1rem;
 }
 
 .fonctionnement__etape {
   padding: 1rem;
-  margin: 0;
+  margin: 1rem;
   -webkit-box-shadow: 0.25rem 0.25rem 0.5rem #808b96;
           box-shadow: 0.25rem 0.25rem 0.5rem #808b96;
   border-radius: 1.25rem;
@@ -312,6 +312,7 @@ h1 {
           flex-direction: row;
   width: 25%;
   height: 25px;
+  font-family: 'Roboto', sans-serif;
   /* &:first-child{
                 margin-top: 0;
             }
@@ -336,6 +337,14 @@ h1 {
             }*/
 }
 
+.fonctionnement__etape:hover {
+  background-color: #FF79DA;
+}
+
+.fonctionnement__etape:hover .fas {
+  color: #9356DC;
+}
+
 .fonctionnement__etape__number {
   width: 18px;
   height: 18px;
@@ -355,37 +364,55 @@ h1 {
 
 .restaurant {
   background-color: #f6f6f6;
-  padding: 2rem 1rem;
+  padding: 1rem;
 }
 
 .restaurant__head {
-  max-width: 1280px;
-  margin: auto;
+  margin: 0;
   position: relative;
-}
-
-.restaurant__titre {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+}
+
+.restaurant__titre {
+  /*display: flex;*/
   font-size: 1.5rem;
   margin: 0.5rem;
   font-weight: bold;
 }
 
 .cartes {
+  margin: 1rem;
+  position: relative;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-orient: vertical;
+  -webkit-box-orient: horizontal;
   -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
+      -ms-flex-direction: row;
+          flex-direction: row;
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+/*display: flex;
+        flex-direction: column;
+        flex-wrap: wrap;
+        justify-content: space-between;
+        
 }
 
 /*
@@ -404,8 +431,15 @@ h1 {
   position: relative;
   text-decoration: none;
   color: inherit;
-  display: block;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
   margin: 1rem;
+  background-size: 300px;
 }
 
 .carte img {

@@ -241,7 +241,7 @@ h1 {
     justify-content: space-between;
        
     &__titre {
-            margin-top: 0;
+            margin: 1rem;
         }
 
        /* &__etapes {
@@ -256,7 +256,7 @@ h1 {
 
         &__etape {
             padding: $padding;
-            margin: 0;
+            margin: 1rem;
             box-shadow: 0.25rem 0.25rem 0.5rem rgb(128, 139, 150);
             border-radius: 1.25rem;
             background-color: #f6f6f6;
@@ -266,6 +266,13 @@ h1 {
             flex-direction: row;
             width: 25%;
             height: 25px;
+            font-family: 'Roboto', sans-serif;
+            &:hover{
+                background-color: #FF79DA;
+                .fas{
+                    color: $color-primary;
+                }
+            }
 
             &__number{
                 width: 18px;
@@ -313,26 +320,36 @@ h1 {
 
 .restaurant {
     background-color: #f6f6f6;
-    padding: 2rem 1rem;
+    padding: 1rem;
 
     &__head {
-    max-width: 1280px;
-    margin: auto;
+    margin: 0;
     position: relative;
-
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: flex-start;
     }
 
     &__titre {
-    display: flex;
+    /*display: flex;*/
     font-size: 1.5rem;
     margin: 0.5rem;
     font-weight: bold;
+    
 
     }
     
 }
 .cartes{
-        display: flex;
+    margin: 1rem;
+    position: relative;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    }
+        /*display: flex;
         flex-direction: column;
         flex-wrap: wrap;
         justify-content: space-between;
@@ -356,8 +373,11 @@ h1 {
     position: relative;
     text-decoration: none;
     color: inherit;
-    display: block;
+    display: flex;
+    flex-direction: column;
     margin: 1rem;
+    background-size: 300px;
+    
     
   
     img {
@@ -366,7 +386,8 @@ h1 {
         border: 0 solid transparent;
         border-radius: 1rem 1rem 0 0;
         box-shadow: none;
-        object-fit: cover;  
+        object-fit: cover; 
+         
         
     }
   
@@ -439,6 +460,7 @@ h1 {
             }
         }
     
+  
   
   }
 
