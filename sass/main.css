@@ -103,32 +103,6 @@ header {
   max-width: 168px;
 }
 
-/*
-.fa-arrow-left:before {
-    position: absolute;
-    left: 2rem;
-    height: 2rem;
-    width: 2rem;
-    top: 50%;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    transform: translateY(-50%);
-    font-size: 1.2rem;
-    color: #000;
-}
-/*
-header {
-    padding:$padding;
-    box-shadow: 10px 5px 5px #f2f2f2;
-    position:relative ;
-    z-index: 1000;
-    &__logo{
-        font-family: "shrikhand";
-        margin: 0;
-        text-align: center;
-    }
-}*/
 footer {
   background-color: #353535;
   color: #FFF;
@@ -180,27 +154,6 @@ footer .footer__logo {
   margin-bottom: 5px;
 }
 
-/*
-footer {
-        background-color: black;
-        color: #fff;
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        padding: 25px 0px;
-        max-width: 100%;
-        min-width: 320px;
-
-        &__titre{
-            margin: 0;
-            align-items: center;
-        }
-        
-        &__list{
-            display: flex;
-            justify-content: center;
-        }
-    }*/
 h1 {
   margin: 0.5rem;
   display: -webkit-box;
@@ -279,15 +232,6 @@ h1 {
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
-  /* &__etapes {
-            display: flex;
-            width: 120%;
-            margin: 0;
-            padding: 0;
-            list-style: none;
-            counter-reset: compteListe;
-        
-        }*/
 }
 
 .fonctionnement__titre {
@@ -313,28 +257,6 @@ h1 {
   width: 25%;
   height: 25px;
   font-family: 'Roboto', sans-serif;
-  /* &:first-child{
-                margin-top: 0;
-            }
-
-             &:last-child {
-            margin-bottom: 0;
-            }
-
-             &::before {
-            counter-increment: compteListe 1;
-            content: counter(compteListe) " ";
-            background: $color-primary;
-            height: 1.5rem;
-            width: 1.5rem;
-            border-radius: 100px;
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            color: white;
-            position: absolute;
-            left: -0.75rem;
-            }*/
 }
 
 .fonctionnement__etape:hover {
@@ -385,14 +307,13 @@ h1 {
 }
 
 .restaurant__titre {
-  /*display: flex;*/
   font-size: 1.5rem;
   margin: 0.5rem;
   font-weight: bold;
 }
 
 .cartes {
-  margin: 2rem;
+  margin: 0 2rem 2rem 2rem;
   position: relative;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -408,23 +329,6 @@ h1 {
           justify-content: center;
 }
 
-/*display: flex;
-        flex-direction: column;
-        flex-wrap: wrap;
-        justify-content: space-between;
-        
-}
-
-/*
-.cartes {
-    display: grid;
-    grid-template-columns: repeat(1, 1fr);
-    column-gap: 2rem;
-    row-gap: 2rem;
-    @media (min-width:64rem) {
-    grid-template-columns: repeat(2, 1fr); 
-    }      
-*/
 .carte {
   background-color: white;
   border-radius: 1rem;
@@ -438,12 +342,15 @@ h1 {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
-  margin: 1rem;
+  margin: 2rem;
   background-size: 300px;
   margin-top: O;
+  /**&__localisation {
+        margin: 0;
+    }*/
 }
 
-.carte img {
+.carte__img {
   height: 12rem;
   width: 100%;
   border: 0 solid transparent;
@@ -482,10 +389,6 @@ h1 {
 .carte__titre {
   margin: 0;
   margin-bottom: 0.25rem;
-}
-
-.carte__localisation {
-  margin: 0;
 }
 
 .carte__btn {
@@ -568,7 +471,6 @@ h1 {
 }
 
 .carte__heart {
-  /*background-color: white;*/
   position: absolute;
   right: 20px;
   top: 1;
